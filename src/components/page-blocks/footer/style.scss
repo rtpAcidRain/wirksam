@@ -1,0 +1,105 @@
+.footer {
+    margin-top: auto;
+
+    .logo {
+
+        &__img {
+            display: flex;
+            max-width: 11.1875rem;
+            max-height: 5rem;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 179 / 80;
+
+            img {
+                width: 100%;
+                aspect-ratio: 179 / 80;
+                margin-top: auto;
+            }
+
+        }
+
+    }
+
+    .nav {
+        &--top {
+            &__list {
+                font-weight: 400;
+                font-size: 0.9375rem;
+                line-height: 0.7333333333333333em;
+
+                li {
+                    a {
+                        @apply py-0;
+                    }
+
+                    &:not(.outsider) {
+                        a {
+                            @apply text-white;
+
+                            &::before {
+                                content: none;
+                            }
+
+                            &:hover,
+                            &.active {
+                                @apply text-red;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            &::before {
+                @apply bg-black opacity-10;
+                content: '';
+                left: 0;
+                right: 0;
+                bottom: 0;
+                position: absolute;
+                height: 1px;
+            }
+
+        }
+
+        &--bot {
+            &__list {
+                a {
+                    padding: 0;
+
+                    @screen tablet {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.feedback {
+    @apply flex flex-col;
+    gap: 4.4375rem;
+
+    @screen tablet {
+        gap: 2.5rem;
+    }
+
+    @screen mobile {
+        gap: 1.5rem;
+    }
+}
+
+.feedback__header {
+    @apply flex items-center justify-between;
+
+    .contacts {
+        @apply flex items-center gap-12;
+
+        @screen mobile {
+            @apply flex-col items-start;
+            gap: 1.5rem;
+        }
+    }
+}

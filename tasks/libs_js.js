@@ -1,7 +1,6 @@
 const plugins = [
 	"src/js/swiper.js",
 	"node_modules/imask/dist/imask.min.js",
-	'node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js',
 ];
 const {
 	src,

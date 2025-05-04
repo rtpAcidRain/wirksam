@@ -1,0 +1,31 @@
+@layer components {
+    .btn {
+        @apply block uppercase font-primary text-center transition-all;
+    }
+
+    .btn-primary {
+        @apply bg-black text-white;
+        font-size: 0.875rem;
+        padding: 1.428571428571429em 1.571428571428571em;
+        border-radius: 0.3571428571428571em;
+        min-width: 14.07142857142857em;
+        font-weight: 500;
+        line-height: 0.7142857142857143em;
+        letter-spacing: 0.14em;
+    }
+
+    .btn-white {
+        @apply bg-white text-red;
+    }
+
+    .btn-big {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+
+    .btn-disabled {
+        @apply cursor-default opacity-30;
+    }
+
+}

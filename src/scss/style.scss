@@ -16,7 +16,35 @@
     scrollbar-width: none;
     /* Firefox */
   }
+
+  .container {
+    max-width: 105rem;
+
+    @screen laptop {
+      @apply px-6;
+    }
+
+    @screen mobile {
+      @apply px-3;
+    }
+
+  }
+
+
+  .layout {
+    @apply grid grid-cols-12 gap-5;
+
+    @screen mobile {
+      @apply grid-cols-4;
+    }
+  }
+
+
+  .underline {
+    text-decoration-skip-ink: none;
+  }
 }
+
 
 input,
 textarea,

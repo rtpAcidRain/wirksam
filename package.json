@@ -13,9 +13,6 @@
   "devDependencies": {
     "@babel/core": "^7.14.2",
     "@babel/preset-env": "^7.14.2",
-    "@tailwindcss/container-queries": "^0.1.1",
-    "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.12",
     "browser-sync": "^2.26.14",
     "chalk": "^4.1.1",
     "gulp": "^4.0.2",
@@ -43,12 +40,11 @@
     "imagemin-pngquant": "^9.0.2",
     "postcss": "^8.4.38",
     "require-dir": "^1.2.0",
-    "tailwindcss": "^3.4.3"
+    "sass": "^1.87.0",
+    "tailwindcss": "^3.4.17"
   },
   "dependencies": {
-    "@fancyapps/ui": "^5.0.36",
     "imask": "^7.6.1",
-    "sass": "^1.56.0",
     "swiper": "^11.1.4"
   }
 }
