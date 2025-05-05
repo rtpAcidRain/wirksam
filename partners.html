@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gulp pack for easy html/php markup development">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="/img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="/img/favicons/favicon.webp" type="image/webp">
+    <link rel="shortcut icon" href="/img/favicons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Dental way</title>
+
+</head>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+
+<body>
+    <div class="page">
+        <header class="header flex w-full">
+            <div class="container layout mx-auto tablet:items-center">
+                <div
+                    class="logo col-span-5 subDesktop:col-span-4 laptop:col-span-2 tablet:col-span-3 mobile:col-span-2">
+                    <a href="/" class="block logo__img">
+                        <img src="img/svg/logo.svg" width="250" height="112" alt="Логотип Wirksam">
+                    </a>
+                    <span class="text-xs/[1.4em] block pt-[2.625rem] logo__text laptop:hidden">
+                        Производитель запасных частей для <span class="text-red">трансмиссии, сцеплений и моторной
+                            группы</span>
+                        для
+                        грузового транспорта
+                    </span>
+                </div>
+                <nav
+                    class="nav col-span-7 subDesktop:col-span-8 laptop:col-span-10 tablet:col-span-9 justify-self-end mobile:col-span-2">
+                    <div class="flex gap-[2.625rem] items-center nav--top tablet:hidden">
+                        <ul class="flex gap-7 items-center nav--top__list">
+                            <li><a href="/">О компании</a></li>
+                            <li><a href="/">Партнерам</a></li>
+                            <li><a href="/">Новости</a></li>
+                            <li><a href="/">Контакты</a></li>
+                            <li class="outsider"><a href="tel:+74997531418"
+                                    class="text-red transition-opacity hover:opacity-40">+7
+                                    499 753 14 18</a></li>
+                            <li class="outsider"><a href="mailto:info@wirksam.ru"
+                                    class="opacity-40 transition-opacity hover:opacity-100">info@wirksam.ru</a></li>
+                        </ul>
+                        <a href="mailto:info@wirksam.ru" class="btn btn-primary text-nowrap">ОБРАТНАЯ СВЯЗЬ</a>
+                    </div>
+                    <div class="nav--bot flex gap-[1.875em]">
+                        <ul class="flex items-center gap-[1.875em] tablet:gap-5 nav--bot__list mobile:hidden">
+                            <li>
+                                <a href="/">ТРАНСМИССИИ</a>
+                            </li>
+                            <li>
+                                <a href="/">СЦЕПЛЕНИЯ</a>
+                            </li>
+                            <li>
+                                <a href="/">ДВИГАТЕЛЬ</a>
+                            </li>
+                        </ul>
+                        <div class="flex ml-auto">
+                            <a href="/" class="header__chat ml-auto">
+                                <svg width="24" height="24" class="w-[1.5rem] h-[1.5rem]" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 6.75C21.5188 6.75 22.75 5.51878 22.75 4C22.75 2.48122 21.5188 1.25 20 1.25C18.4812 1.25 17.25 2.48122 17.25 4C17.25 5.51878 18.4812 6.75 20 6.75Z"
+                                        fill="#AF1917" />
+                                    <path
+                                        d="M19.04 8.15C17.47 7.81 16.19 6.53 15.85 4.96C15.72 4.35 15.71 3.76 15.82 3.2C15.95 2.58 15.49 2 14.85 2H7C4.24 2 2 4.24 2 7V13.95C2 16.71 4.24 18.95 7 18.95H8.5C8.78 18.95 9.14 19.13 9.3 19.35L10.8 21.34C11.46 22.22 12.54 22.22 13.2 21.34L14.7 19.35C14.89 19.1 15.18 18.95 15.5 18.95H17.01C19.77 18.95 22 16.72 22 13.96V9.15C22 8.52 21.42 8.06 20.8 8.18C20.24 8.28 19.65 8.28 19.04 8.15ZM8 12C7.44 12 7 11.55 7 11C7 10.45 7.44 10 8 10C8.55 10 9 10.45 9 11C9 11.55 8.56 12 8 12ZM12 12C11.44 12 11 11.55 11 11C11 10.45 11.44 10 12 10C12.55 10 13 10.45 13 11C13 11.55 12.56 12 12 12ZM16 12C15.44 12 15 11.55 15 11C15 10.45 15.44 10 16 10C16.55 10 17 10.45 17 11C17 11.55 16.56 12 16 12Z"
+                                        fill="#AF1917" />
+                                </svg>
+                            </a>
+                            <a href="/" class="burger ">
+                                <svg width="24" height="18" class="w-[1.5rem] h-auto" viewBox="0 0 24 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="3" rx="1.5" fill="#AF1917" />
+                                    <rect y="7.28564" width="24" height="3" rx="1.5" fill="#AF1917" />
+                                    <rect y="15" width="24" height="3" rx="1.5" fill="#AF1917" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </header>
+
+
+        <!-- TODO -->
+        <!-- MOBILE MENU -->
+        <main class="main">
+            <div>
+                <ol class="breadcrumbs">
+                    <li>
+                        <a href="/">ГЛАВНАЯ </a>
+                    </li>
+                    <li>
+                        ПАРТНЕРАМ
+                    </li>
+                </ol>
+            </div>
+
+            <section class="container section layout gap-y-[3.125rem] mobile:flex flex-col mobile:gap-5">
+                <h1 class="col-span-5 heading2">Партнерам</h1>
+                <p class="col-span-7 big-description max-w-[47rem]">
+                    Мы заинтересованы в построении долгосрочных партнёрских отношений с организациями, которые разделяют
+                    наши
+                    стандарты качества и стремятся к развитию на динамичном автомобильном рынке.
+                </p>
+                <div
+                    class="col-span-12 pt-10 pb-8 layout border-y border-black border-opacity-10 mobile:py-4 mobile:flex flex-col mobile:gap-y-4">
+                    <p class="col-span-5  uppercase font-primary font-medium text-sm/[1.43em] tracking-[0.14em] ">
+                        уделяем
+                        особое
+                        внимание
+                        сотрудничеству с
+                        компаниями,
+                        обладающими</p>
+                    <p class="col-span-5 big-description mt-auto" style="max-width: 37.0625rem;">
+                        <span class="text-red">Наша цель</span> — стать для вас <br class="tablet:hidden"> не просто
+                        поставщиком,
+                        <br class="tablet:hidden"> а стратегическим
+                        союзником,
+                        который вкладывается в ваш
+                        успех.
+                    </p>
+                    <ul class="col-span-7 col-start-6 row-span-2 row-start-1 flex flex-col gap-10 mobile:gap-4">
+                        <li
+                            class="pb-10 border-b border-black border-opacity-10 flex flex-col gap-4 mobile:gap-2 mobile:pb-4">
+                            <span class="font-primary font-medium text-lg/[1.2em] mobile:text-sm ">Устойчивыми рыночными
+                                позициями</span>
+                            <span class="text-sm/[1.2em] tracking-[0.01em] mobile:text-xs">Подтвержденный опыт работы от
+                                3 лет,
+                                стабильные
+                                финансовые показатели и
+                                репутация
+                                надежного игрока
+                                в своем сегменте</span>
+                        </li>
+                        <li
+                            class="pb-10 border-b border-black border-opacity-10 flex flex-col gap-4 mobile:gap-2 mobile:pb-4">
+                            <span class="font-primary font-medium text-lg/[1.2em] mobile:text-sm ">Развитой
+                                инфраструктурой</span>
+                            <span class="text-sm/[1.2em] tracking-[0.01em] mobile:text-xs">Наличие розничных точек,
+                                сервисных
+                                центров,
+                                логистических мощностей или
+                                дилерской
+                                сети, способной
+                                обеспечить эффективное продвижение продукции</span>
+                        </li>
+                        <li
+                            class="pb-10 border-b border-black border-opacity-10 flex flex-col gap-4 mobile:gap-2 mobile:pb-4">
+                            <span class="font-primary font-medium text-lg/[1.2em] mobile:text-sm ">Гибкостью и
+                                открытостью</span>
+                            <span class="text-sm/[1.2em] tracking-[0.01em] mobile:text-xs">Готовность к внедрению новых
+                                технологий,
+                                адаптации
+                                ассортимента под
+                                потребности
+                                клиентов и
+                                совместной работе над оптимизацией бизнес-процессов</span>
+                        </li>
+                        <li class="flex flex-col gap-4 mobile:gap-2 ">
+                            <span class="font-primary font-medium text-lg/[1.2em] mobile:text-sm ">Стратегическим
+                                видением</span>
+                            <span class="text-sm/[1.2em] tracking-[0.01em] mobile:text-xs">Амбициозные планы по
+                                расширению географии
+                                продаж,
+                                увеличению доли рынка
+                                или
+                                выходу на новые
+                                категории продукции.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <ul class="section container grid grid-cols-3 gap-5 cards tablet:grid-cols-1">
+                <li class="card card-white card-static">
+                    <div class="card__heading">
+                        <span>АВТОПАРКАМ</span>
+                    </div>
+                    <img src="img/partners/list/png.webp" alt="">
+                </li>
+                <li class="card card-white card-static">
+                    <div class="card__heading">
+                        <span>СТАНЦИЯМ ТЕХНИЧЕСКОГО ОБСЛУЖИВАНИЯ</span>
+                    </div>
+                    <img src="img/partners/list/png1.webp" alt="">
+                </li>
+                <li class="card card-white card-static">
+                    <div class="card__heading">
+                        <span>АВТОМАГАЗИНАМ</span>
+                    </div>
+                    <img src="img/partners/list/png2.webp" alt="">
+                </li>
+            </ul>
+            <div class="section container">
+                <section
+                    class="bg-white rounded-[0.625rem] py-[3.75rem] px-[1.875rem] grid grid-cols-2 gap-x-5 gap-y-16 tablet:gap-y-10 mobile:gap-y-6">
+                    <h2 class="heading2">Преимущества партнерства</h2>
+                    <div class="flex gap-2 items-center ml-auto">
+                        <span class="gear-svg block"></span>
+                        <span class="gear-svg block"></span>
+                        <span class="gear-svg block"></span>
+                    </div>
+                    <ul class="col-span-2 grid grid-cols-4 tablet:grid-cols-2  mobile:grid-cols-1 gap-5">
+                        <li class="p-5 pb-8 rounded-[1.25rem] bg-bluegrey text-base/[1.2em] tracking-[0.01em] h-auto">
+                            <span
+                                class="flex mb-8 uppercase font-primary font-medium text-sm/[1.43em] tracking-[0.14em] text-red justify-between gap-5">
+                                <span class="flex-1">Широкий ассортимент <br> продукции</span>
+                                <svg width="42" height="42" style="width: 2.625rem; height: 2.625rem;"
+                                    viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_739)">
+                                        <path
+                                            d="M14 28H9.5025C5.495 28 3.5 26.005 3.5 21.9975V9.5025C3.5 5.495 5.495 3.5 9.5025 3.5H17.5C21.5075 3.5 23.5025 5.495 23.5025 9.5025"
+                                            stroke="#AF1917" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M32.4976 38.5H24.5001C20.4926 38.5 18.4976 36.505 18.4976 32.4975V20.0025C18.4976 15.995 20.4926 14 24.5001 14H32.4976C36.5051 14 38.5001 15.995 38.5001 20.0025V32.4975C38.5001 36.505 36.5051 38.5 32.4976 38.5Z"
+                                            stroke="#AF1917" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M26.0227 26.25H31.7277" stroke="#AF1917" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M28.875 29.1025V23.3975" stroke="#AF1917" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_739">
+                                            <rect width="42" height="42" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </span>
+                            Регулярное обновление каталога с учётом рыночного спроса и технологических трендов.
+                        </li>
+                        <li class="p-5 pb-8 rounded-[1.25rem] bg-bluegrey text-base/[1.2em] tracking-[0.01em] h-auto">
+                            <span
+                                class="flex mb-8 uppercase font-primary font-medium text-sm/[1.43em] tracking-[0.14em] text-red justify-between gap-5">
+                                <span class="flex-1">Качественный <br> продукт</span>
+                                <svg width="42" height="42" style="width: 2.625rem; height: 2.625rem;"
+                                    viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.6925 19.5125H13.055C11.9525 19.5125 11.0601 20.4049 11.0601 21.5074V30.4674H17.6925V19.5125V19.5125Z"
+                                        stroke="#AF1917" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M22.3323 11.5499H19.6722C18.5697 11.5499 17.6772 12.4425 17.6772 13.545V30.45H24.3098V13.545C24.3098 12.4425 23.4348 11.5499 22.3323 11.5499Z"
+                                        stroke="#AF1917" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M28.9593 22.4874H24.3218V30.45H30.9543V24.4825C30.9368 23.38 30.0443 22.4874 28.9593 22.4874Z"
+                                        stroke="#AF1917" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M15.75 38.5H26.25C35 38.5 38.5 35 38.5 26.25V15.75C38.5 7 35 3.5 26.25 3.5H15.75C7 3.5 3.5 7 3.5 15.75V26.25C3.5 35 7 38.5 15.75 38.5Z"
+                                        stroke="#AF1917" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </span>
+                            Соответствие международным стандартам (ISO, IATF 16949). Применяем многоступенчатый контроль
+                            качества на
+                            всех этапах производства.
+                        </li>
+                        <li class="p-5 pb-8 rounded-[1.25rem] bg-bluegrey text-base/[1.2em] tracking-[0.01em] h-auto">
+                            <span
+                                class="flex mb-8 uppercase font-primary font-medium text-sm/[1.43em] tracking-[0.14em] text-red justify-between gap-5">
+                                <span class="flex-1">Надёжность <br> поставок</span>
+                                <svg width="42" height="42" style="width: 2.625rem; height: 2.625rem;"
+                                    viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M37.9051 18.27L36.1901 25.585C34.7201 31.9025 31.8151 34.4575 26.3551 33.9325C25.4801 33.8625 24.5351 33.705 23.5201 33.46L20.5801 32.76C13.2826 31.0275 11.0251 27.4225 12.7401 20.1075L14.4551 12.775C14.8051 11.2875 15.2251 9.99251 15.7501 8.92501C17.7976 4.69001 21.2801 3.55251 27.1251 4.93501L30.0476 5.61751C37.3801 7.33251 39.6201 10.955 37.9051 18.27Z"
+                                        stroke="#AF1917" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M26.3551 33.9325C25.2701 34.6675 23.9051 35.28 22.2426 35.8225L19.4776 36.7325C12.5301 38.9725 8.87261 37.1 6.61511 30.1525L4.37511 23.24C2.13511 16.2925 3.99011 12.6175 10.9376 10.3775L13.7026 9.46755C14.4201 9.24005 15.1026 9.04755 15.7501 8.92505C15.2251 9.99255 14.8051 11.2875 14.4551 12.775L12.7401 20.1075C11.0251 27.4225 13.2826 31.0275 20.5801 32.76L23.5201 33.46C24.5351 33.705 25.4801 33.8625 26.3551 33.9325Z"
+                                        stroke="#AF1917" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M22.1201 14.9275L30.6076 17.08" stroke="#AF1917" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M20.405 21.7L25.48 22.995" stroke="#AF1917" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+
+                            </span>
+                            90% товаров в наличии на складах по всей РФ. Чёткое соблюдение сроков отгрузки благодаря
+                            продуманной
+                            логистике.
+                        </li>
+                        <li class="p-5 pb-8 rounded-[1.25rem] bg-bluegrey text-base/[1.2em] tracking-[0.01em] h-auto">
+                            <span
+                                class="flex mb-8 uppercase font-primary font-medium text-sm/[1.43em] tracking-[0.14em] text-red justify-between gap-5">
+                                <span class="flex-1">ВЫГОДНЫЕ <br> ЦЕНЫ</span>
+                                <svg width="42" height="42" viewBox="0 0 42 42"
+                                    style="width: 2.625rem; height: 2.625rem;" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M33.7749 13.86V22.8725C33.7749 28.2625 30.6949 30.5724 26.0749 30.5724H10.6924C9.90492 30.5724 9.15242 30.5025 8.45242 30.345C8.01492 30.275 7.59494 30.1525 7.20994 30.0125C4.58494 29.0325 2.99243 26.7575 2.99243 22.8725V13.86C2.99243 8.46997 6.07242 6.16003 10.6924 6.16003H26.0749C29.9949 6.16003 32.8124 7.82253 33.5649 11.62C33.6874 12.32 33.7749 13.0375 33.7749 13.86Z"
+                                        stroke="#AF1917" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M39.0268 19.1102V28.1227C39.0268 33.5127 35.9469 35.8227 31.3269 35.8227H15.9443C14.6493 35.8227 13.4769 35.6478 12.4619 35.2628C10.3794 34.4928 8.96185 32.9003 8.45435 30.3453C9.15435 30.5028 9.90684 30.5727 10.6943 30.5727H26.0769C30.6969 30.5727 33.7768 28.2627 33.7768 22.8727V13.8602C33.7768 13.0377 33.7069 12.3027 33.5669 11.6202C36.8919 12.3202 39.0268 14.6652 39.0268 19.1102Z"
+                                        stroke="#AF1917" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M18.3722 22.9948C20.9238 22.9948 22.9922 20.9263 22.9922 18.3748C22.9922 15.8232 20.9238 13.7548 18.3722 13.7548C15.8207 13.7548 13.7522 15.8232 13.7522 18.3748C13.7522 20.9263 15.8207 22.9948 18.3722 22.9948Z"
+                                        stroke="#AF1917" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M8.36499 14.525V22.2251" stroke="#AF1917" stroke-width="2"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M28.3879 14.5255V22.2256" stroke="#AF1917" stroke-width="2"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </span>
+                            Конкурентное ценообразование с учётом объёмов закупок. Специальные условия для долгосрочных
+                            партнёров.
+                            Прозрачная система работы без скрытых комиссий.
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <section class="section container mt-auto feedback-section mobile:px-0">
+            <div
+                class="pt-[3.75rem] pb-12  rounded-[0.625rem] bg-white overflow-hidden layout tablet:flex tablet:flex-col tablet:gap-11 mobile:gap-5 tablet:py-8 mobile:px-3 relative">
+                <div class="z-0 absolute decor">
+                    <img src="img/main/png.webp" width="342.09" height="290.87" class="" alt="">
+                </div>
+
+                <div class="col-span-6 pl-[1.875rem] tablet:pr-[1.875rem] mobile:px-4 relative z-10">
+                    <h2 class="heading2 mb-14 tablet:mb-8 mobile:mb-4">Обратная связь</h2>
+                    <p class="text-[0.9375rem]/[1.6em] tracking-[-0.03em] text-grey2 max-w-[25.25rem]">
+                        Если у вас возникли вопросы или вам требуется дополнительная информация, оставьте свои
+                        контактные
+                        данные, и
+                        наши специалисты свяжутся с вами.
+                    </p>
+                </div>
+                <div class="col-span-6 pr-[1.875rem] tablet:pl-[1.875rem] mobile:px-4 relative z-10">
+                    <div class="feedback">
+                        <div class="feedback__header">
+                            <div class="contacts">
+                                <a href="tel:+74997531418" class="text-red transition-opacity hover:opacity-40">
+                                    +7 499 753 14 18
+                                </a>
+                                <a href="mailto:info@wirksam.ru"
+                                    class="opacity-40 transition-opacity hover:opacity-100">
+                                    info@wirksam.ru
+                                </a>
+                            </div>
+                            <svg width="24" height="24" class="w-[1.5rem] h-auto" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 6.75C21.5188 6.75 22.75 5.51878 22.75 4C22.75 2.48122 21.5188 1.25 20 1.25C18.4812 1.25 17.25 2.48122 17.25 4C17.25 5.51878 18.4812 6.75 20 6.75Z"
+                                    fill="#AF1917" />
+                                <path
+                                    d="M19.04 8.15C17.47 7.81 16.19 6.53 15.85 4.96C15.72 4.35 15.71 3.76 15.82 3.2C15.95 2.58 15.49 2 14.85 2H7C4.24 2 2 4.24 2 7V13.95C2 16.71 4.24 18.95 7 18.95H8.5C8.78 18.95 9.14 19.13 9.3 19.35L10.8 21.34C11.46 22.22 12.54 22.22 13.2 21.34L14.7 19.35C14.89 19.1 15.18 18.95 15.5 18.95H17.01C19.77 18.95 22 16.72 22 13.96V9.15C22 8.52 21.42 8.06 20.8 8.18C20.24 8.28 19.65 8.28 19.04 8.15ZM8 12C7.44 12 7 11.55 7 11C7 10.45 7.44 10 8 10C8.55 10 9 10.45 9 11C9 11.55 8.56 12 8 12ZM12 12C11.44 12 11 11.55 11 11C11 10.45 11.44 10 12 10C12.55 10 13 10.45 13 11C13 11.55 12.56 12 12 12ZM16 12C15.44 12 15 11.55 15 11C15 10.45 15.44 10 16 10C16.55 10 17 10.45 17 11C17 11.55 16.56 12 16 12Z"
+                                    fill="#AF1917" />
+                            </svg>
+                        </div>
+                        <form action="#" class="feedback__form form">
+                            <!-- TODO -->
+                            <!-- ADD VALIDATION INPUTs-->
+                            <input type="text" placeholder="Имя" class="form__input input">
+                            <input type="text" placeholder="ТЕЛЕФОН" class="form__input input">
+                            <input type="text" placeholder="СООБЩЕНИЕ" class="form__input input">
+                            <span class="form__buttons">
+                                <input id="feedbackCheckbox" type="checkbox" class="checkbox">
+                                <label for="feedbackCheckbox" class="form__checkbox checkbox__label">
+                                    <span class="fake-checkbox">
+
+                                    </span>
+                                    <span class="title">
+                                        Даю согласие на обработку <a href="/" class="underline skip-ink"> персональных
+                                            данных</a>
+                                    </span>
+                                </label>
+                                <!-- TODO -->
+                                <!-- ADD VALIDATION TO CHECKBOX -->
+                                <button type="submit"
+                                    class="form__submit btn btn-primary btn-big mobile:btn-normal">ОТПРАВИТЬ</button>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer bg-black2 flex w-full pt-9 pb-[3.1875rem]">
+            <nav class="container layout mx-auto nav tablet:flex tablet:flex-col laptop:gap-y-11">
+                <div
+                    class="col-span-2 laptop:col-span-3 tablet:flex tablet:justify-between tablet:items-center mobile:flex-col mobile:items-start mobile:gap-11">
+                    <a href="/" class="logo__img mb-9 tablet:mb-0">
+                        <img src="img/svg/logoFoot.svg" width="250" height="112" alt="Логотип Wirksam">
+                    </a>
+                    <p class="text-xs/[0.6428571428571429em] text-white opacity-40 laptop:hidden">
+                        Все права защищены © 2025.
+                    </p>
+                    <div class="hidden tablet:block">
+                        <a href="mailto:info@wirksam.ru" class="btn btn-primary btn-white">ОБРАТНАЯ СВЯЗЬ</a>
+                    </div>
+                </div>
+                <div
+                    class="col-span-3 subDesktop:col-span-2 laptop:col-span-9 flex items-end justify-center nav--bot laptop:justify-end laptop:text-end tablet:justify-start tablet:text-start">
+                    <ul class="flex flex-col gap-[1.875rem] text-white nav--bot__list">
+                        <li>
+                            <a href="/">ТРАНСМИССИИ</a>
+                        </li>
+                        <li>
+                            <a href="/">СЦЕПЛЕНИЯ</a>
+                        </li>
+                        <li>
+                            <a href="/">МОТОРНЫЕ ЗАПЧАСТИ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="col-span-7 subDesktop:col-span-8 laptop:col-span-12 flex flex-col items-end justify-end gap-11 ">
+                    <div class="flex gap-7 items-center justify-between w-full nav--top ">
+                        <ul class="flex gap-7 items-center nav--top__list tablet:flex-wrap">
+                            <li><a href="/">О компании</a></li>
+                            <li><a href="/">Партнерам</a></li>
+                            <li><a href="/">Новости</a></li>
+                            <li><a href="/">Контакты</a></li>
+                            <li class="outsider">
+                                <a href="tel:+74997531418" class="text-red transition-opacity hover:opacity-40">
+                                    +7 499 753 14 18
+                                </a>
+                            </li>
+                            <li class="outsider">
+                                <a href="mailto:info@wirksam.ru"
+                                    class=" text-white opacity-40 transition-opacity hover:opacity-100">
+                                    info@wirksam.ru
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="mailto:info@wirksam.ru" class="btn btn-primary btn-white tablet:hidden">ОБРАТНАЯ
+                            СВЯЗЬ</a>
+                    </div>
+                    <div
+                        class="flex justify-between items-center w-full tablet:flex-col tablet:gap-5 tablet:items-start">
+                        <div class="flex items-center gap-4">
+                            <a href="/" class="transition-opacity hover:opacity-40 block">
+                                <svg width="20" height="20" class="w-[1.25rem] h-auto" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.1462 14.2696H14.6931C14.1429 14.2696 13.9729 13.8321 12.9846 12.8305C12.1236 11.9969 11.7429 11.8849 11.5315 11.8849C11.2347 11.8849 11.15 11.9696 11.15 12.379V13.6914C11.15 14.0449 11.0373 14.2563 10.1057 14.2563C8.22647 14.1302 6.61132 13.1053 5.6737 11.6115L5.6597 11.5881C4.57137 10.2364 3.76913 8.60725 3.37234 6.82538L3.35767 6.74736C3.35767 6.53596 3.44237 6.3379 3.85182 6.3379H5.30492C5.6717 6.3379 5.81308 6.50729 5.95512 6.90207C6.674 8.97736 7.87436 10.7979 8.36851 10.7979C8.5519 10.7979 8.63659 10.7132 8.63659 10.2477V8.1011C8.57991 7.1128 8.05775 7.02878 8.05775 6.676C8.06375 6.48728 8.21846 6.33657 8.40786 6.33657C8.41386 6.33657 8.41919 6.33657 8.42519 6.33723H8.42453H10.7112C11.022 6.33723 11.1347 6.50662 11.1347 6.8734V9.7676C11.1347 10.0777 11.2761 10.1911 11.3607 10.1911C11.5441 10.1911 11.7002 10.0777 12.0383 9.73959C12.7412 8.88133 13.342 7.8997 13.8001 6.84139L13.8308 6.76136C13.9275 6.51929 14.1596 6.35124 14.431 6.35124C14.4437 6.35124 14.4557 6.35191 14.4683 6.35257H14.4663H15.9194C16.3569 6.35257 16.4563 6.57731 16.3569 6.88873C15.7741 8.17245 15.1192 9.27545 14.3603 10.2971L14.395 10.2477C14.2403 10.5018 14.1836 10.6145 14.395 10.8979C14.5497 11.1093 15.0585 11.5468 15.3973 11.9423C15.8874 12.4271 16.2982 12.9912 16.6083 13.6141L16.625 13.6508C16.7664 14.0589 16.5543 14.2709 16.1448 14.2709L16.1462 14.2696ZM13.0699 0H6.93008C1.3264 0 0 1.3264 0 6.93008V13.0699C0 18.6736 1.3264 20 6.93008 20H13.0699C18.6736 20 20 18.6736 20 13.0699V6.93008C20 1.3264 18.6589 0 13.0699 0Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="/" class="transition-opacity hover:opacity-40 block">
+                                <svg width="24" height="18" class="w-[1.5rem] h-auto" viewBox="0 0 24 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.58568 12.1034V5.36953C11.9762 6.49439 13.8277 7.58103 16.0174 8.75257C14.2114 9.75418 11.9762 10.878 9.58568 12.1034ZM22.9082 2.02046C22.4958 1.47717 21.793 1.05427 21.0447 0.914262C18.8454 0.496621 5.12495 0.495433 2.92685 0.914262C2.32682 1.02674 1.79252 1.29863 1.33354 1.72106C-0.600407 3.51606 0.00559916 13.1421 0.471755 14.7013C0.667778 15.3762 0.921185 15.863 1.24032 16.1825C1.65149 16.6049 2.21446 16.8958 2.8611 17.0262C4.67193 17.4008 14.001 17.6102 21.0065 17.0825C21.6519 16.97 22.2232 16.6698 22.6739 16.2294C24.462 14.4416 24.3401 4.27498 22.9082 2.02046Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="/"
+                            class="text-xs/[0.6428571428571429em] text-white opacity-40 block transition-opacity hover:opacity-100">
+                            Политика конфиденциальности
+                        </a>
+                        <p class="text-xs/[0.6428571428571429em] text-white opacity-40 hidden laptop:block">
+                            Все права защищены © 2025.
+                        </p>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+        <!-- TODO MODAL -->
+    </div>
+</body>
+
+</html>
