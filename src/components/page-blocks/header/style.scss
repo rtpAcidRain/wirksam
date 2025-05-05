@@ -10,7 +10,7 @@
 
             li {
                 a {
-                    @apply py-8 block text-center w-fit h-full;
+                    @apply py-8 block text-center w-fit h-full text-nowrap;
                 }
 
                 &:not(.outsider) {
@@ -56,7 +56,7 @@
 
         &__list {
             a {
-                @apply uppercase font-primary text-sm/[0.7142857142857143em] block transition-colors hover:text-red;
+                @apply uppercase font-primary font-medium text-sm/[0.7142857142857143em] block transition-colors hover:text-red;
                 padding: 1.875rem 0 1.375rem;
                 letter-spacing: 0.14em;
 
@@ -73,6 +73,7 @@
     @apply bg-grey;
     position: fixed;
     top: 0;
+    z-index: 999;
 
     .logo {
         @apply flex gap-5 h-fit pt-5 tablet:pt-0;
@@ -108,11 +109,10 @@
 
 .burger,
 .header__chat {
-    @apply flex justify-center relative overflow-hidden;
+    @apply flex justify-center relative overflow-hidden items-center;
     width: 4.5rem;
-    height: auto;
+    height: 4.5rem;
 
-    padding-top: 1.4375rem;
 
     &::before {
         @apply bg-black opacity-10;
@@ -163,7 +163,13 @@
 
 .header-scroll {
     .header {
-        // background-color: #f6f6f8;
+        @apply transition-transform;
         box-shadow: 0 0 3.125rem rgba(0, 0, 0, .1);
+    }
+}
+
+.header-hide {
+    .header {
+        transform: translateY(-100%) !important;
     }
 }

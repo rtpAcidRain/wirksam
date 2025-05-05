@@ -1,0 +1,32 @@
+.top-slider {
+
+    .swiper {
+        @apply aspect-[704/538] mr-0;
+        overflow: visible;
+        pointer-events: none;
+        width: 44rem;
+        height: 33.625rem;
+
+        @screen tablet {
+            height: auto;
+        }
+    }
+
+    .swiper-slide {
+        @apply transition-all opacity-0 tablet:transition-opacity;
+
+        &.swiper-slide-visible {
+            @apply opacity-100;
+        }
+    }
+
+}
+
+.top-slider-container {
+    &>div:first-child {
+        @screen mobile {
+
+            height: calc(var(--doc-height, 100vh) - var(--header) - 1.25rem)
+        }
+    }
+}

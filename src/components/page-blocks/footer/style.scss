@@ -103,3 +103,26 @@
         }
     }
 }
+
+.feedback-section {
+    .decor {
+        @apply bg-red flex items-end justify-end;
+        left: 0;
+        bottom: 6.25rem;
+        border-radius: 0 400px 400px 0;
+        width: 20.6875rem;
+        height: 9.3125rem;
+
+
+        img {
+            transform: translate(6.4375rem, 5.679375rem);
+            aspect-ratio: 343/291;
+            width: 21.375rem;
+            height: 18.1875rem;
+        }
+
+        @screen tablet {
+            bottom: 11.25rem;
+        }
+    }
+}

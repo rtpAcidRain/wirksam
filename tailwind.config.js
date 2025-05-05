@@ -78,7 +78,12 @@ module.exports = {
       red: '#AF1917',
       grey: '#f6f6f6',
       grey2: '#919191',
-      bluegrey: '#f0f3f5'
+      grey3: '#ECEDF1',
+      grey4: '#C7C7C7',
+      bluegrey: '#f0f3f5',
+      yellow: '#FFE05E',
+      yellow2: '#DDB103',
+      yellow3: '#BD9700'
     },
     boxShadow: {
     },

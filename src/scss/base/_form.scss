@@ -21,19 +21,21 @@ textarea {
 }
 
 ::placeholder {
-  @apply font-primary text-grey2;
+  @apply font-primary font-medium text-grey2;
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1em;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+
+  @screen mobile {
+    @apply text-xs/[1em];
+  }
+
 }
 
 .input {
-  @apply bg-bluegrey w-full block transition-colors;
-  font-size: 0.875rem;
-  line-height: 1em;
-  letter-spacing: 0.14em;
+  @apply bg-bluegrey w-full block transition-colors text-base/[0.875em] h-[4.625rem] mobile:h-auto;
   padding: 1.875rem 1.25rem;
   border-radius: 0.625rem;
   border: 1px solid #fff;
@@ -44,8 +46,9 @@ textarea {
 
 
   @screen tablet {
-    padding: 1.25rem 1rem;
+    padding: 1.125rem 0.875rem;
   }
+
 
 }
 
@@ -128,7 +131,7 @@ textarea {
   @apply pt-3 flex items-center;
 
   @screen mobile {
-    @apply flex-col items-start gap-3;
+    @apply flex-col items-start;
   }
 }
 
@@ -144,6 +147,6 @@ textarea {
   margin-left: auto;
 
   @screen mobile {
-    @apply ml-0 w-full;
+    @apply ml-0 w-full mt-4;
   }
 }

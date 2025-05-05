@@ -1,9 +1,11 @@
-<section class="section container mt-auto">
-    <!-- TODO -->
-    <!-- ADD IMAGE -->
+<section class="section container mt-auto feedback-section mobile:px-0">
     <div
-        class="pt-[3.75rem] pb-12  rounded-[0.625rem] bg-white overflow-hidden layout tablet:flex tablet:flex-col tablet:gap-11 mobile:gap-5 tablet:py-10 mobile:py-6">
-        <div class="col-span-6 pl-[1.875rem] tablet:pr-[1.875rem] mobile:px-4">
+        class="pt-[3.75rem] pb-12  rounded-[0.625rem] bg-white overflow-hidden layout tablet:flex tablet:flex-col tablet:gap-11 mobile:gap-5 tablet:py-8 mobile:px-3 relative">
+        <div class="z-0 absolute decor">
+            <img src="/img/main/png.webp" width="342.09" height="290.87" class="" alt="">
+        </div>
+
+        <div class="col-span-6 pl-[1.875rem] tablet:pr-[1.875rem] mobile:px-4 relative z-10">
             <h2 class="heading2 mb-14 tablet:mb-8 mobile:mb-4">Обратная связь</h2>
             <p class="text-[0.9375rem]/[1.6em] tracking-[-0.03em] text-grey2 max-w-[25.25rem]">
                 Если у вас возникли вопросы или вам требуется дополнительная информация, оставьте свои контактные
@@ -11,7 +13,7 @@
                 наши специалисты свяжутся с вами.
             </p>
         </div>
-        <div class="col-span-6 pr-[1.875rem] tablet:pl-[1.875rem] mobile:px-4">
+        <div class="col-span-6 pr-[1.875rem] tablet:pl-[1.875rem] mobile:px-4 relative z-10">
             <div class="feedback">
                 <div class="feedback__header">
                     <div class="contacts">
@@ -51,7 +53,8 @@
                         </label>
                         <!-- TODO -->
                         <!-- ADD VALIDATION TO CHECKBOX -->
-                        <button type="submit" class="form__submit btn btn-primary btn-big">ОТПРАВИТЬ</button>
+                        <button type="submit"
+                            class="form__submit btn btn-primary btn-big mobile:btn-normal">ОТПРАВИТЬ</button>
                     </span>
                 </form>
             </div>
@@ -137,3 +140,4 @@
         </div>
     </nav>
 </footer>
+<!-- TODO MODAL -->
