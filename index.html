@@ -24,7 +24,7 @@
             <div class="container layout mx-auto tablet:items-center">
                 <div
                     class="logo col-span-5 subDesktop:col-span-4 laptop:col-span-2 tablet:col-span-3 mobile:col-span-2">
-                    <a href="/" class="block logo__img">
+                    <a href="https://rtpacidrain.github.io/wirksam/" class="block logo__img">
                         <img src="img/svg/logo.svg" width="250" height="112" alt="Логотип Wirksam">
                     </a>
                     <span class="text-xs/[1.4em] block pt-[2.625rem] logo__text laptop:hidden">
@@ -38,32 +38,33 @@
                     class="nav col-span-7 subDesktop:col-span-8 laptop:col-span-10 tablet:col-span-9 justify-self-end mobile:col-span-2">
                     <div class="flex gap-[2.625rem] items-center nav--top tablet:hidden">
                         <ul class="flex gap-7 items-center nav--top__list">
-                            <li><a href="/">О компании</a></li>
-                            <li><a href="/">Партнерам</a></li>
-                            <li><a href="/">Новости</a></li>
-                            <li><a href="/">Контакты</a></li>
+                            <li><a href="/" data-scrollto="aboutUs">О компании</a></li>
+                            <li><a href="https://rtpacidrain.github.io/wirksam/partners">Партнерам</a></li>
+                            <li><a href="/" data-scrollto="newsBlock">Новости</a></li>
+                            <li><a href="https://rtpacidrain.github.io/wirksam/contacts">Контакты</a></li>
                             <li class="outsider"><a href="tel:+74997531418"
                                     class="text-red transition-opacity hover:opacity-40">+7
                                     499 753 14 18</a></li>
                             <li class="outsider"><a href="mailto:info@wirksam.ru"
                                     class="opacity-40 transition-opacity hover:opacity-100">info@wirksam.ru</a></li>
                         </ul>
-                        <a href="mailto:info@wirksam.ru" class="btn btn-primary text-nowrap">ОБРАТНАЯ СВЯЗЬ</a>
+                        <a href="mailto:info@wirksam.ru" class="btn btn-primary text-nowrap"
+                            data-scrollto="feedbackFormBlock">ОБРАТНАЯ СВЯЗЬ</a>
                     </div>
                     <div class="nav--bot flex gap-[1.875em]">
                         <ul class="flex items-center gap-[1.875em] tablet:gap-5 nav--bot__list mobile:hidden">
                             <li>
-                                <a href="/">ТРАНСМИССИИ</a>
+                                <a href="/" data-modal="fedbackModal">ТРАНСМИССИИ</a>
                             </li>
                             <li>
-                                <a href="/">СЦЕПЛЕНИЯ</a>
+                                <a href="/" data-modal="fedbackModal">СЦЕПЛЕНИЯ</a>
                             </li>
                             <li>
-                                <a href="/">ДВИГАТЕЛЬ</a>
+                                <a href="/" data-modal="fedbackModal">ДВИГАТЕЛЬ</a>
                             </li>
                         </ul>
                         <div class="flex ml-auto">
-                            <a href="/" class="header__chat ml-auto">
+                            <a href="/" class="header__chat ml-auto" data-modal="fedbackModal">
                                 <svg width="24" height="24" class="w-[1.5rem] h-[1.5rem]" viewBox="0 0 24 24"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -74,13 +75,36 @@
                                         fill="#AF1917" />
                                 </svg>
                             </a>
-                            <a href="/" class="burger ">
-                                <svg width="24" height="18" class="w-[1.5rem] h-auto" viewBox="0 0 24 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="24" height="3" rx="1.5" fill="#AF1917" />
-                                    <rect y="7.28564" width="24" height="3" rx="1.5" fill="#AF1917" />
-                                    <rect y="15" width="24" height="3" rx="1.5" fill="#AF1917" />
+                            <a href="/" class="burger " data-modal="mobileNav">
+                                <svg width="24" height="24" class="w-[1.5rem] h-[1.5rem] open" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22.5 2.08691H1.5C0.671573 2.08691 0 2.82662 0 3.73909C0 4.65156 0.671573 5.39126 1.5 5.39126H22.5C23.3284 5.39126 24 4.65156 24 3.73909C24 2.82662 23.3284 2.08691 22.5 2.08691Z"
+                                        fill="#AF1917" />
+                                    <path
+                                        d="M22.5 10.1117H1.5C0.671573 10.1117 0 10.8514 0 11.7639C0 12.6763 0.671573 13.416 1.5 13.416H22.5C23.3284 13.416 24 12.6763 24 11.7639C24 10.8514 23.3284 10.1117 22.5 10.1117Z"
+                                        fill="#AF1917" />
+                                    <path
+                                        d="M22.5 18.6088H1.5C0.671573 18.6088 0 19.3485 0 20.2609C0 21.1734 0.671573 21.9131 1.5 21.9131H22.5C23.3284 21.9131 24 21.1734 24 20.2609C24 19.3485 23.3284 18.6088 22.5 18.6088Z"
+                                        fill="#AF1917" />
                                 </svg>
+                                <svg width="24" height="24" class="w-[1.5rem] h-[1.5rem] close" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_4304_99)">
+                                        <path
+                                            d="M22.9719 20.6355L3.71212 1.3757C2.95235 0.615921 1.81338 0.523049 1.16816 1.16826C0.522948 1.81348 0.61582 2.95245 1.3756 3.71222L20.6354 22.972C21.3951 23.7318 22.5341 23.8246 23.1793 23.1794C23.8245 22.5342 23.7317 21.3952 22.9719 20.6355Z"
+                                            fill="#AF1917" />
+                                        <path
+                                            d="M20.6365 1.37574L1.37576 20.6364C0.615951 21.3963 0.523049 22.5353 1.16826 23.1805C1.81348 23.8257 2.95248 23.7328 3.71229 22.973L22.973 3.71227C23.7328 2.95245 23.8257 1.81345 23.1805 1.16824C22.5353 0.523025 21.3963 0.615925 20.6365 1.37574Z"
+                                            fill="#AF1917" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4304_99">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
                             </a>
                         </div>
                     </div>
@@ -88,40 +112,87 @@
             </div>
 
         </header>
+        <div class="mobile-menu modal modal--left mobile-nav hidden tablet:block z-[9999]" id="mobileNav">
+            <div class="modal__container flex ">
+                <div class="flex-1 py-9 px-6 mobile:px-3 flex flex-col gap-5 no-scrollbar  overflow-auto">
+                    <div class="flex-1">
+                        <ul class="text-4xl flex flex-col gap-4">
+                            <li class="mobile:block hidden">
+                                <ul class="flex flex-col gap-3">
+                                    <li>
+                                        <a href="/" data-modal="fedbackModal">Трансмиссии</a>
+                                    </li>
+                                    <li>
+                                        <a href="/" data-modal="fedbackModal">Сцепления</a>
+                                    </li>
+                                    <li>
+                                        <a href="/" data-modal="fedbackModal">Двигатель</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/" class="modal-close" data-scrollto="aboutUs">О компании</a></li>
+                            <li><a href="https://rtpacidrain.github.io/wirksam/partners">Партнерам</a></li>
+                            <li><a href="/" class="modal-close" data-scrollto="newsBlock">Новости</a></li>
+                            <li><a href="https://rtpacidrain.github.io/wirksam/contacts">Контакты</a></li>
 
+                        </ul>
+                    </div>
+                    <div class="mt-auto flex flex-col gap-4">
+                        <div><a href="tel:+74997531418" class="text-red transition-opacity hover:opacity-40">+7
+                                499 753 14 18</a></div>
+                        <div><a href="mailto:info@wirksam.ru"
+                                class="opacity-40 transition-opacity hover:opacity-100">info@wirksam.ru</a></div>
+                        <a href="mailto:info@wirksam.ru" class="btn btn-primary text-nowrap w-fit" class="modal-close"
+                            data-modal="fedbackModal">ОБРАТНАЯ
+                            СВЯЗЬ</a>
 
-        <!-- TODO -->
-        <!-- MOBILE MENU -->
+                    </div>
+                </div>
+            </div>
+        </div>
         <main class="main">
-            <section class="section container layout gap-y-5 tablet:flex flex-col top-slider-container" id="">
+
+            <section class="section container layout gap-y-5 tablet:flex flex-col top-slider-container" id="aboutUs">
                 <div
                     class="col-span-9 bg-[#EFEFEF] rounded-[0.625rem] py-10 px-[1.875rem] flex flex-col relative tablet:h-[42.25rem] ">
                     <div class="flex flex-col relative z-20  swiper-container flex-1 ">
                         <div class="mini-haeding mb-8">WIRKSAM</div>
-                        <div class="swiper max-w-[38.75rem] ml-0" data-slider-xl-spv="1" data-slider-md-spv="1"
-                            data-slider-spv="1" data-slider-connect="topSlider" data-slider-loop="true"
-                            data-slider-effect="fade">
+                        <div class="swiper max-w-[38.75rem] mobile:max-w-full ml-0" data-slider-xl-spv="1"
+                            data-slider-md-spv="1" data-slider-spv="1" data-slider-connect="topSlider"
+                            data-slider-loop="true" data-slider-effect="fade">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <h1 class="heading2 mb-8"><span class="text-red">Качественные</span> аналоги по
                                         доступным
                                         ценам</h1>
-                                    <a href="/" class="btn btn-secondary">ПОДРОБНЕЕ <span
-                                            class="arrow-svg white"></span></a>
+                                    <a href="/" class="btn btn-secondary " data-modal="fedbackModal">ПОДРОБНЕЕ
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.22727 14.5256L6.7642 13.0767L11.1463 8.6946H0.5V6.57812H11.1463L6.7642 2.20312L8.22727 0.747159L15.1165 7.63636L8.22727 14.5256Z" />
+                                        </svg></a>
                                 </div>
                                 <div class="swiper-slide">
                                     <h2 class="heading2 mb-8"><span class="text-red">Качественные</span> аналоги по
                                         доступным
                                         ценам 2 </h2>
-                                    <a href="/" class="btn btn-secondary">ПОДРОБНЕЕ <span
-                                            class="arrow-svg white"></span></a>
+                                    <a href="/" class="btn btn-secondary">ПОДРОБНЕЕ
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.22727 14.5256L6.7642 13.0767L11.1463 8.6946H0.5V6.57812H11.1463L6.7642 2.20312L8.22727 0.747159L15.1165 7.63636L8.22727 14.5256Z" />
+                                        </svg></a>
                                 </div>
                                 <div class="swiper-slide">
                                     <h2 class="heading2 mb-8"><span class="text-red">Качественные</span> аналоги по
                                         доступным
                                         ценам 3</h2>
-                                    <a href="/" class="btn btn-secondary">ПОДРОБНЕЕ <span
-                                            class="arrow-svg white"></span></a>
+                                    <a href="/" class="btn btn-secondary">ПОДРОБНЕЕ
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.22727 14.5256L6.7642 13.0767L11.1463 8.6946H0.5V6.57812H11.1463L6.7642 2.20312L8.22727 0.747159L15.1165 7.63636L8.22727 14.5256Z" />
+                                        </svg></a>
                                 </div>
                             </div>
                         </div>
@@ -137,26 +208,34 @@
                                 <img class="swiper-slide" src="img/main/topSlider/main-slider1.png" />
                                 <img class="swiper-slide" src="img/main/topSlider/main-slider1.png" />
                                 <img class="swiper-slide" src="img/main/topSlider/main-slider1.png" />
-                                <img class="swiper-slide" src="img/main/topSlider/main-slider1.png" />
                             </div>
                         </div>
                         <script>
                             document.addEventListener('DOMContentLoaded', function () {
                                 var slider = document.querySelector(".top-slider .swiper")
-                                var swiper = new Swiper(slider, {
-                                    effect: "coverflow",
-                                    grabCursor: true,
-                                    centeredSlides: true,
-                                    slidesPerView: "auto",
-                                    coverflowEffect: {
-                                        rotate: 0,
-                                        stretch: 300,
-                                        scale: 0.8,
-                                        depth: 0,
-                                        modifier: 1,
-                                        slideShadows: true,
-                                    },
-                                });
+                                var swiper;
+                                if (isTabletOrMobile) {
+                                    swiper = new Swiper(slider, {
+                                        grabCursor: true,
+                                        slidesPerView: "1",
+
+                                    });
+                                } else {
+
+                                    swiper = new Swiper(slider, {
+                                        effect: "coverflow",
+                                        centeredSlides: true,
+                                        slidesPerView: "auto",
+                                        coverflowEffect: {
+                                            rotate: 0,
+                                            stretch: 300,
+                                            scale: 0.8,
+                                            depth: 0,
+                                            modifier: 1,
+                                            slideShadows: true,
+                                        },
+                                    });
+                                }
                                 publickSliderConnection["topSlider"] = function (ind) {
                                     swiper.slideTo(ind)
                                 }
@@ -194,11 +273,12 @@
                         <img src="img/partners/sldier/png-5.webp" width="93" height="23" alt="MERCEDES-Benz"
                             style="width: 5.8125rem;">
                     </div>
-                    <a href="/" class="btn btn-primary btn-small w-fit">ДЛЯ ПАРТНЕРОВ</a>
+                    <a href="https://rtpacidrain.github.io/wirksam/partners" class="btn btn-primary btn-small w-fit">ДЛЯ
+                        ПАРТНЕРОВ</a>
                 </div>
             </section>
 
-            <div class="container mobile:px-0">
+            <div class="container ">
                 <section
                     class="section pt-[3.75rem] pb-8 rounded-[0.625rem] bg-white layout gap-y-36 tablet:flex flex-col tablet:gap-y-6 tablet:px-[1.875rem] tablet:py-8 mobile:py-6 mobile:px-3 mobile:gap-y-4">
                     <h2 class="heading2 pl-[1.875rem] tablet:pl-0 col-span-4 laptop:col-span-5 -mt-5 tablet:mt-0">
@@ -217,26 +297,27 @@
                             16949</span>
                         <span class="gear-svg block"></span>
                     </div>
+
                     <ul
                         class="col-span-12 px-[1.875rem] tablet:px-0 grid gap-5 grid-cols-3 cards tablet:flex-col tablet:flex">
-                        <li class="card card-grey card-interactive">
-                            <div class="card__heading">
-                                <span>ТРАНСМИССИИ</span>
-                            </div>
-                            <img src="img/main/suplies/png.png" alt="">
-                        </li>
-                        <li class="card card-grey card-interactive">
-                            <div class="card__heading">
-                                <span>СЦЕПЛЕНИЯ</span>
-                            </div>
-                            <img src="img/main/suplies/png-1.png" alt="">
-                        </li>
-                        <li class="card card-grey card-interactive">
-                            <div class="card__heading">
-                                <span>ДВИГАТЕЛЬ</span>
-                            </div>
-                            <img src="img/main/suplies/png-2.png" alt="">
-                        </li>
+                        <li><a href="#" data-modal="fedbackModal" class="card card-grey card-interactive">
+                                <div class="card__heading">
+                                    <span>ТРАНСМИССИИ</span>
+                                </div>
+                                <img src="img/main/suplies/png.png" alt="">
+                            </a></li>
+                        <li><a href="#" data-modal="fedbackModal" class="card card-grey card-interactive">
+                                <div class="card__heading">
+                                    <span>СЦЕПЛЕНИЯ</span>
+                                </div>
+                                <img src="img/main/suplies/png-1.png" alt="">
+                            </a></li>
+                        <li><a href="#" data-modal="fedbackModal" class="card card-grey card-interactive">
+                                <div class="card__heading">
+                                    <span>ДВИГАТЕЛЬ</span>
+                                </div>
+                                <img src="img/main/suplies/png-2.png" alt="">
+                            </a></li>
                     </ul>
                 </section>
             </div>
@@ -375,7 +456,9 @@
                     </div>
                 </div>
                 <div class="container flex justify-between items-center">
-                    <a href="/" class="btn btn-primary btn-small btn-gray w-fit">ДЛЯ ПАРТНЕРОВ</a>
+                    <a href="https://rtpacidrain.github.io/wirksam/partners"
+                        class="btn btn-primary btn-small btn-gray w-fit">ДЛЯ
+                        ПАРТНЕРОВ</a>
                     <div class="swiper-controls flex items-center gap-5">
                         <button
                             class="btn btn-slider btn-slider-big btn-slider-grey prev tablet:btn-slider-normal mobile:btn-slider-small" />
@@ -385,18 +468,20 @@
                 </div>
             </section>
             <section
-                class="section rounded-[1.25rem]  bg-grey3 aspect-video container mobile:aspect-auto mobile:pb-10 bg-cover bg-no-repeat bg overflow-hidden relative"
+                class="section rounded-[1.25rem] container !px-0     bg-cover bg-no-repeat bg overflow-hidden relative video-section mobile:!bg-none mobile:!px-3"
                 style="background-image: url('img/main/video-back.webp');">
-                <h2 class="section-header mb-16 tablet:mb-12 mobile:mb-8 text-yellow3 !border-yellow2 relative z-20">
+                <h2
+                    class="section-header mb-16 tablet:mb-12 mobile:mb-8 text-yellow3 !border-yellow2  z-20 left-0 right-0  absolute container hide-on-play not-on-mobile mobile:static mobile:!px-0">
                     ВИДЕО О КОМПАНИИ
                 </h2>
-                <div class="layout tablet:flex flex-col tablet:gap-11 mobile:gap-6 relative z-20">
-                    <p class="big-description  col-span-5">
+                <div
+                    class="layout tablet:flex flex-col tablet:gap-11 mobile:gap-4 absolute z-20 left-0 right-0 top-[7.8125rem] tablet:top-24 mobile:top-[4.5rem] not-on-mobile mobile:bottom-0 container hide-on-play mobile:!px-0 mobile:static mobile:mb-4">
+                    <p class="big-description  col-span-5 ">
                         Компания создана для быстрого удовлетворения при ремонте, вернуть технику в строй за короткие
                         сроки
                     </p>
                     <button href="/"
-                        class="cursor-pointer col-span-4 col-start-9 text-sm/[1em] max-w-[21rem] mobile:max-w-[17rem] text-yellow3 flex items-center mobile:justify-center gap-6 video-button mx-auto">
+                        class="cursor-pointer tablet:flex-1 mobile:hidden col-span-4 col-start-9 text-sm/[1em] max-w-[21rem] mobile:max-w-[17rem] text-yellow3 flex items-center mobile:justify-center gap-6 video-controller mx-auto">
                         <span class=" text-start flex-1">
                             СМОТРИТЕ <br> ВИДЕО О НАШЕМ ПРОИЗВОДСТВЕ
                         </span>
@@ -404,14 +489,76 @@
                     </button>
                 </div>
                 <span
-                    class="bg-white bg-opacity-85 absolute top-0 left-0 bottom-0 right-0 z-10 hidden tablet:block"></span>
+                    class="bg-white bg-opacity-85 absolute top-0 left-0 bottom-0 right-0 z-10 hidden tablet:block hide-on-play mobile:hidden"></span>
+                <div class="relative mobile:bg-[url('../img/main/video-back.webp')] bg-no-repeat bg-cover ">
+                    <video src="img/video.mp4" class="w-full aspect-video" controls></video>
+                    <span
+                        class="bg-white bg-opacity-85 absolute top-0 left-0 bottom-0 right-0  hidden  hide-on-play mobile:block"></span>
+                    <button href="/"
+                        class="cursor-pointer absolute top-1/2 hide-on-play  left-1/2 -translate-x-1/2 -translate-y-1/2 hidden mobile:flex mobile:flex-1 col-span-4 col-start-9 text-sm/[1em] max-w-[21rem] mobile:max-w-[17rem] text-yellow3  items-center mobile:justify-center gap-6 video-controller mx-auto">
+                        <span class=" text-start flex-1">
+                            СМОТРИТЕ <br> ВИДЕО О НАШЕМ ПРОИЗВОДСТВЕ
+                        </span>
+                    </button>
+                </div>
             </section>
 
-            <!-- TODO ADD swiper-container -->
-            <!-- <section class="section ">
-                <h2 class="heading2 max-w-[49.375rem] mb-[3.75rem] tablet:mb-10 mobile:mb-5 container">
+            <section class="section container swiper-container news-section" id="newsBlock">
+                <h2 class="heading2 max-w-[49.375rem] mb-[3.75rem] tablet:mb-10 mobile:mb-5 ">
                     Новости
                 </h2>
+                <div class="swiper mb-6 tablet:mb-5 mobile:mb-4">
+                    <div class="swiper-wrapper">
+                        <a href="#" data-modal="fedbackModal" class="swiper-slide news-section__block-wrapper">
+                            <article class="news-section__block">
+                                <h6 class="news-section__block__heading">Новость Новость</h6>
+                                <span class="news-section__block__img">
+                                    <img src="img/main/video-back.webp" alt="">
+                                </span>
+                                <p class="news-section__block__description">Описание новости описание новости описание
+                                    новости
+                                    описание новости описание новости Описание новости описание новости описание новости
+                                    описание новости описание новости</p>
+                            </article>
+                        </a>
+                        <a href="#" data-modal="fedbackModal" class="swiper-slide news-section__block-wrapper">
+                            <article class="news-section__block">
+                                <h6 class="news-section__block__heading">Новость Новость</h6>
+                                <span class="news-section__block__img">
+                                    <img src="img/main/video-back.webp" alt="">
+                                </span>
+                                <p class="news-section__block__description">Описание новости описание новости описание
+                                    новости
+                                    описание новости описание новости Описание новости описание новости описание новости
+                                    описание новости описание новости</p>
+                            </article>
+                        </a>
+                        <a href="#" data-modal="fedbackModal" class="swiper-slide news-section__block-wrapper">
+                            <article class="news-section__block">
+                                <h6 class="news-section__block__heading">Новость Новость</h6>
+                                <span class="news-section__block__img">
+                                    <img src="img/main/video-back.webp" alt="">
+                                </span>
+                                <p class="news-section__block__description">Описание новости описание новости описание
+                                    новости
+                                    описание новости описание новости Описание новости описание новости описание новости
+                                    описание новости описание новости</p>
+                            </article>
+                        </a>
+                        <a href="#" data-modal="fedbackModal" class="swiper-slide news-section__block-wrapper">
+                            <article class="news-section__block">
+                                <h6 class="news-section__block__heading">Новость Новость</h6>
+                                <span class="news-section__block__img">
+                                    <img src="img/main/video-back.webp" alt="">
+                                </span>
+                                <p class="news-section__block__description">Описание новости описание новости описание
+                                    новости
+                                    описание новости описание новости Описание новости описание новости описание новости
+                                    описание новости описание новости</p>
+                            </article>
+                        </a>
+                    </div>
+                </div>
                 <div class="container flex items-center">
                     <div class="swiper-controls flex items-center gap-5 ml-auto">
                         <button
@@ -420,7 +567,7 @@
                             class="btn btn-slider btn-slider-big btn-slider-grey next tablet:btn-slider-normal mobile:btn-slider-small" />
                     </div>
                 </div>
-            </section> -->
+            </section>
 
 
             <section class="section rounded-[1.25rem]  bg-grey3 pb-24 tablet:pb-14 container mobile:pb-10">
@@ -500,8 +647,9 @@
                     </div>
                 </div>
             </section>
+
         </main>
-        <section class="section container mt-auto feedback-section mobile:px-0">
+        <section class="section container mt-auto feedback-section" id="feedbackFormBlock">
             <div
                 class="pt-[3.75rem] pb-12  rounded-[0.625rem] bg-white overflow-hidden layout tablet:flex tablet:flex-col tablet:gap-11 mobile:gap-5 tablet:py-8 mobile:px-3 relative">
                 <div class="z-0 absolute decor">
@@ -540,11 +688,9 @@
                             </svg>
                         </div>
                         <form action="#" class="feedback__form form">
-                            <!-- TODO -->
-                            <!-- ADD VALIDATION INPUTs-->
-                            <input type="text" placeholder="Имя" class="form__input input">
-                            <input type="text" placeholder="ТЕЛЕФОН" class="form__input input">
-                            <input type="text" placeholder="СООБЩЕНИЕ" class="form__input input">
+                            <input type="text" placeholder="Имя" class="form__input email input">
+                            <input type="text" placeholder="ТЕЛЕФОН" class="form__input phone input">
+                            <input type="text" placeholder="СООБЩЕНИЕ" class="form__input input notreq">
                             <span class="form__buttons">
                                 <input id="feedbackCheckbox" type="checkbox" class="checkbox">
                                 <label for="feedbackCheckbox" class="form__checkbox checkbox__label">
@@ -556,8 +702,6 @@
                                             данных</a>
                                     </span>
                                 </label>
-                                <!-- TODO -->
-                                <!-- ADD VALIDATION TO CHECKBOX -->
                                 <button type="submit"
                                     class="form__submit btn btn-primary btn-big mobile:btn-normal">ОТПРАВИТЬ</button>
                             </span>
@@ -570,7 +714,7 @@
             <nav class="container layout mx-auto nav tablet:flex tablet:flex-col laptop:gap-y-11">
                 <div
                     class="col-span-2 laptop:col-span-3 tablet:flex tablet:justify-between tablet:items-center mobile:flex-col mobile:items-start mobile:gap-11">
-                    <a href="/" class="logo__img mb-9 tablet:mb-0">
+                    <a href="https://rtpacidrain.github.io/wirksam/" class="logo__img mb-9 tablet:mb-0">
                         <img src="img/svg/logoFoot.svg" width="250" height="112" alt="Логотип Wirksam">
                     </a>
                     <p class="text-xs/[0.6428571428571429em] text-white opacity-40 laptop:hidden">
@@ -584,13 +728,13 @@
                     class="col-span-3 subDesktop:col-span-2 laptop:col-span-9 flex items-end justify-center nav--bot laptop:justify-end laptop:text-end tablet:justify-start tablet:text-start">
                     <ul class="flex flex-col gap-[1.875rem] text-white nav--bot__list">
                         <li>
-                            <a href="/">ТРАНСМИССИИ</a>
+                            <a href="/" data-modal="fedbackModal">ТРАНСМИССИИ</a>
                         </li>
                         <li>
-                            <a href="/">СЦЕПЛЕНИЯ</a>
+                            <a href="/" data-modal="fedbackModal">СЦЕПЛЕНИЯ</a>
                         </li>
                         <li>
-                            <a href="/">МОТОРНЫЕ ЗАПЧАСТИ</a>
+                            <a href="/" data-modal="fedbackModal">МОТОРНЫЕ ЗАПЧАСТИ</a>
                         </li>
                     </ul>
                 </div>
@@ -598,10 +742,10 @@
                     class="col-span-7 subDesktop:col-span-8 laptop:col-span-12 flex flex-col items-end justify-end gap-11 ">
                     <div class="flex gap-7 items-center justify-between w-full nav--top ">
                         <ul class="flex gap-7 items-center nav--top__list tablet:flex-wrap">
-                            <li><a href="/">О компании</a></li>
-                            <li><a href="/">Партнерам</a></li>
-                            <li><a href="/">Новости</a></li>
-                            <li><a href="/">Контакты</a></li>
+                            <li><a href="/" data-scrollto="aboutUs">О компании</a></li>
+                            <li><a href="https://rtpacidrain.github.io/wirksam/partners">Партнерам</a></li>
+                            <li><a href="/" data-scrollto="newsBlock">Новости</a></li>
+                            <li><a href="https://rtpacidrain.github.io/wirksam/contacts">Контакты</a></li>
                             <li class="outsider">
                                 <a href="tel:+74997531418" class="text-red transition-opacity hover:opacity-40">
                                     +7 499 753 14 18
@@ -614,8 +758,8 @@
                                 </a>
                             </li>
                         </ul>
-                        <a href="mailto:info@wirksam.ru" class="btn btn-primary btn-white tablet:hidden">ОБРАТНАЯ
-                            СВЯЗЬ</a>
+                        <a href="mailto:info@wirksam.ru" class="btn btn-primary btn-white tablet:hidden"
+                            data-modal="fedbackModal">ОБРАТНАЯ СВЯЗЬ</a>
                     </div>
                     <div
                         class="flex justify-between items-center w-full tablet:flex-col tablet:gap-5 tablet:items-start">
@@ -648,7 +792,62 @@
                 </div>
             </nav>
         </footer>
-        <!-- TODO MODAL -->
+        <div class="modal modal--fade modal--full modal--form flex z-[9999] tablet:!p-0" id="fedbackModal">
+            <div class="modal__container !py-0  m-auto !h-fit !w-fit">
+                <div class="bg-white rounded-2xl px-6 py-8">
+                    <div class="feedback">
+                        <div class="feedback__header">
+                            <div class="contacts">
+                                <a href="tel:+74997531418" class="text-red transition-opacity hover:opacity-40">
+                                    +7 499 753 14 18
+                                </a>
+                                <a href="mailto:info@wirksam.ru"
+                                    class="opacity-40 transition-opacity hover:opacity-100">
+                                    info@wirksam.ru
+                                </a>
+                            </div>
+                            <a href="#" class="block mb-auto modal-close">
+                                <svg width="24" height="24" class="w-[1.5rem] h-[1.5rem] close" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_4304_99)">
+                                        <path
+                                            d="M22.9719 20.6355L3.71212 1.3757C2.95235 0.615921 1.81338 0.523049 1.16816 1.16826C0.522948 1.81348 0.61582 2.95245 1.3756 3.71222L20.6354 22.972C21.3951 23.7318 22.5341 23.8246 23.1793 23.1794C23.8245 22.5342 23.7317 21.3952 22.9719 20.6355Z"
+                                            fill="#AF1917" />
+                                        <path
+                                            d="M20.6365 1.37574L1.37576 20.6364C0.615951 21.3963 0.523049 22.5353 1.16826 23.1805C1.81348 23.8257 2.95248 23.7328 3.71229 22.973L22.973 3.71227C23.7328 2.95245 23.8257 1.81345 23.1805 1.16824C22.5353 0.523025 21.3963 0.615925 20.6365 1.37574Z"
+                                            fill="#AF1917" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4304_99">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                        <form action="#" class="feedback__form form">
+                            <input type="text" placeholder="Имя" class="form__input email input">
+                            <input type="text" placeholder="ТЕЛЕФОН" class="form__input phone input">
+                            <input type="text" placeholder="СООБЩЕНИЕ" class="form__input input notreq">
+                            <span class="form__buttons">
+                                <input id="modalFeedbackCheckbox" type="checkbox" class="checkbox">
+                                <label for="modalFeedbackCheckbox" class="form__checkbox checkbox__label">
+                                    <span class="fake-checkbox">
+
+                                    </span>
+                                    <span class="title">
+                                        Даю согласие на обработку <a href="/" class="underline skip-ink"> персональных
+                                            данных</a>
+                                    </span>
+                                </label>
+                                <button type="submit"
+                                    class="form__submit btn btn-primary btn-big mobile:btn-normal">ОТПРАВИТЬ</button>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

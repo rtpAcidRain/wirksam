@@ -1,25 +1,40 @@
-<section class="section container layout gap-y-5 tablet:flex flex-col top-slider-container" id="">
+<section class="section container layout gap-y-5 tablet:flex flex-col top-slider-container" id="aboutUs">
     <div
         class="col-span-9 bg-[#EFEFEF] rounded-[0.625rem] py-10 px-[1.875rem] flex flex-col relative tablet:h-[42.25rem] ">
         <div class="flex flex-col relative z-20  swiper-container flex-1 ">
             <div class="mini-haeding mb-8">WIRKSAM</div>
-            <div class="swiper max-w-[38.75rem] ml-0" data-slider-xl-spv="1" data-slider-md-spv="1" data-slider-spv="1"
-                data-slider-connect="topSlider" data-slider-loop="true" data-slider-effect="fade">
+            <div class="swiper max-w-[38.75rem] mobile:max-w-full ml-0" data-slider-xl-spv="1" data-slider-md-spv="1"
+                data-slider-spv="1" data-slider-connect="topSlider" data-slider-loop="true" data-slider-effect="fade">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <h1 class="heading2 mb-8"><span class="text-red">Качественные</span> аналоги по доступным
                             ценам</h1>
-                        <a href="/" class="btn btn-secondary">ПОДРОБНЕЕ <span class="arrow-svg white"></span></a>
+                        <a href="/" class="btn btn-secondary " data-modal="fedbackModal">ПОДРОБНЕЕ
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.22727 14.5256L6.7642 13.0767L11.1463 8.6946H0.5V6.57812H11.1463L6.7642 2.20312L8.22727 0.747159L15.1165 7.63636L8.22727 14.5256Z" />
+                            </svg></a>
                     </div>
                     <div class="swiper-slide">
                         <h2 class="heading2 mb-8"><span class="text-red">Качественные</span> аналоги по доступным
                             ценам 2 </h2>
-                        <a href="/" class="btn btn-secondary">ПОДРОБНЕЕ <span class="arrow-svg white"></span></a>
+                        <a href="/" class="btn btn-secondary">ПОДРОБНЕЕ
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.22727 14.5256L6.7642 13.0767L11.1463 8.6946H0.5V6.57812H11.1463L6.7642 2.20312L8.22727 0.747159L15.1165 7.63636L8.22727 14.5256Z" />
+                            </svg></a>
                     </div>
                     <div class="swiper-slide">
                         <h2 class="heading2 mb-8"><span class="text-red">Качественные</span> аналоги по доступным
                             ценам 3</h2>
-                        <a href="/" class="btn btn-secondary">ПОДРОБНЕЕ <span class="arrow-svg white"></span></a>
+                        <a href="/" class="btn btn-secondary">ПОДРОБНЕЕ
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.22727 14.5256L6.7642 13.0767L11.1463 8.6946H0.5V6.57812H11.1463L6.7642 2.20312L8.22727 0.747159L15.1165 7.63636L8.22727 14.5256Z" />
+                            </svg></a>
                     </div>
                 </div>
             </div>
@@ -35,26 +50,34 @@
                     <img class="swiper-slide" src="img/main/topSlider/main-slider1.png" />
                     <img class="swiper-slide" src="img/main/topSlider/main-slider1.png" />
                     <img class="swiper-slide" src="img/main/topSlider/main-slider1.png" />
-                    <img class="swiper-slide" src="img/main/topSlider/main-slider1.png" />
                 </div>
             </div>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
                     var slider = document.querySelector(".top-slider .swiper")
-                    var swiper = new Swiper(slider, {
-                        effect: "coverflow",
-                        grabCursor: true,
-                        centeredSlides: true,
-                        slidesPerView: "auto",
-                        coverflowEffect: {
-                            rotate: 0,
-                            stretch: 300,
-                            scale: 0.8,
-                            depth: 0,
-                            modifier: 1,
-                            slideShadows: true,
-                        },
-                    });
+                    var swiper;
+                    if (isTabletOrMobile) {
+                        swiper = new Swiper(slider, {
+                            grabCursor: true,
+                            slidesPerView: "1",
+
+                        });
+                    } else {
+
+                        swiper = new Swiper(slider, {
+                            effect: "coverflow",
+                            centeredSlides: true,
+                            slidesPerView: "auto",
+                            coverflowEffect: {
+                                rotate: 0,
+                                stretch: 300,
+                                scale: 0.8,
+                                depth: 0,
+                                modifier: 1,
+                                slideShadows: true,
+                            },
+                        });
+                    }
                     publickSliderConnection["topSlider"] = function (ind) {
                         swiper.slideTo(ind)
                     }
@@ -85,11 +108,12 @@
             <img src="img/partners/sldier/png-5.webp" width="93" height="23" alt="MERCEDES-Benz"
                 style="width: 5.8125rem;">
         </div>
-        <a href="/" class="btn btn-primary btn-small w-fit">ДЛЯ ПАРТНЕРОВ</a>
+        <a href="https://rtpacidrain.github.io/wirksam/partners" class="btn btn-primary btn-small w-fit">ДЛЯ
+            ПАРТНЕРОВ</a>
     </div>
 </section>
 
-<div class="container mobile:px-0">
+<div class="container ">
     <section
         class="section pt-[3.75rem] pb-8 rounded-[0.625rem] bg-white layout gap-y-36 tablet:flex flex-col tablet:gap-y-6 tablet:px-[1.875rem] tablet:py-8 mobile:py-6 mobile:px-3 mobile:gap-y-4">
         <h2 class="heading2 pl-[1.875rem] tablet:pl-0 col-span-4 laptop:col-span-5 -mt-5 tablet:mt-0">Качественная
@@ -103,25 +127,26 @@
             <span class="text-red italic font-medium text-2xl/[1.2em] tracking-[0.01em]">ISO, IATF 16949</span>
             <span class="gear-svg block"></span>
         </div>
+
         <ul class="col-span-12 px-[1.875rem] tablet:px-0 grid gap-5 grid-cols-3 cards tablet:flex-col tablet:flex">
-            <li class="card card-grey card-interactive">
-                <div class="card__heading">
-                    <span>ТРАНСМИССИИ</span>
-                </div>
-                <img src="img/main/suplies/png.png" alt="">
-            </li>
-            <li class="card card-grey card-interactive">
-                <div class="card__heading">
-                    <span>СЦЕПЛЕНИЯ</span>
-                </div>
-                <img src="img/main/suplies/png-1.png" alt="">
-            </li>
-            <li class="card card-grey card-interactive">
-                <div class="card__heading">
-                    <span>ДВИГАТЕЛЬ</span>
-                </div>
-                <img src="img/main/suplies/png-2.png" alt="">
-            </li>
+            <li><a href="#" data-modal="fedbackModal" class="card card-grey card-interactive">
+                    <div class="card__heading">
+                        <span>ТРАНСМИССИИ</span>
+                    </div>
+                    <img src="img/main/suplies/png.png" alt="">
+                </a></li>
+            <li><a href="#" data-modal="fedbackModal" class="card card-grey card-interactive">
+                    <div class="card__heading">
+                        <span>СЦЕПЛЕНИЯ</span>
+                    </div>
+                    <img src="img/main/suplies/png-1.png" alt="">
+                </a></li>
+            <li><a href="#" data-modal="fedbackModal" class="card card-grey card-interactive">
+                    <div class="card__heading">
+                        <span>ДВИГАТЕЛЬ</span>
+                    </div>
+                    <img src="img/main/suplies/png-2.png" alt="">
+                </a></li>
         </ul>
     </section>
 </div>
@@ -253,7 +278,8 @@
         </div>
     </div>
     <div class="container flex justify-between items-center">
-        <a href="/" class="btn btn-primary btn-small btn-gray w-fit">ДЛЯ ПАРТНЕРОВ</a>
+        <a href="https://rtpacidrain.github.io/wirksam/partners" class="btn btn-primary btn-small btn-gray w-fit">ДЛЯ
+            ПАРТНЕРОВ</a>
         <div class="swiper-controls flex items-center gap-5">
             <button
                 class="btn btn-slider btn-slider-big btn-slider-grey prev tablet:btn-slider-normal mobile:btn-slider-small" />
@@ -263,31 +289,92 @@
     </div>
 </section>
 <section
-    class="section rounded-[1.25rem]  bg-grey3 aspect-video container mobile:aspect-auto mobile:pb-10 bg-cover bg-no-repeat bg overflow-hidden relative"
+    class="section rounded-[1.25rem] container !px-0     bg-cover bg-no-repeat bg overflow-hidden relative video-section mobile:!bg-none mobile:!px-3"
     style="background-image: url('img/main/video-back.webp');">
-    <h2 class="section-header mb-16 tablet:mb-12 mobile:mb-8 text-yellow3 !border-yellow2 relative z-20">
+    <h2
+        class="section-header mb-16 tablet:mb-12 mobile:mb-8 text-yellow3 !border-yellow2  z-20 left-0 right-0  absolute container hide-on-play not-on-mobile mobile:static mobile:!px-0">
         ВИДЕО О КОМПАНИИ
     </h2>
-    <div class="layout tablet:flex flex-col tablet:gap-11 mobile:gap-6 relative z-20">
-        <p class="big-description  col-span-5">
+    <div
+        class="layout tablet:flex flex-col tablet:gap-11 mobile:gap-4 absolute z-20 left-0 right-0 top-[7.8125rem] tablet:top-24 mobile:top-[4.5rem] not-on-mobile mobile:bottom-0 container hide-on-play mobile:!px-0 mobile:static mobile:mb-4">
+        <p class="big-description  col-span-5 ">
             Компания создана для быстрого удовлетворения при ремонте, вернуть технику в строй за короткие сроки
         </p>
         <button href="/"
-            class="cursor-pointer col-span-4 col-start-9 text-sm/[1em] max-w-[21rem] mobile:max-w-[17rem] text-yellow3 flex items-center mobile:justify-center gap-6 video-button mx-auto">
+            class="cursor-pointer tablet:flex-1 mobile:hidden col-span-4 col-start-9 text-sm/[1em] max-w-[21rem] mobile:max-w-[17rem] text-yellow3 flex items-center mobile:justify-center gap-6 video-controller mx-auto">
             <span class=" text-start flex-1">
                 СМОТРИТЕ <br> ВИДЕО О НАШЕМ ПРОИЗВОДСТВЕ
             </span>
 
         </button>
     </div>
-    <span class="bg-white bg-opacity-85 absolute top-0 left-0 bottom-0 right-0 z-10 hidden tablet:block"></span>
+    <span
+        class="bg-white bg-opacity-85 absolute top-0 left-0 bottom-0 right-0 z-10 hidden tablet:block hide-on-play mobile:hidden"></span>
+    <div class="relative mobile:bg-[url('../img/main/video-back.webp')] bg-no-repeat bg-cover ">
+        <video src="img/video.mp4" class="w-full aspect-video" controls></video>
+        <span
+            class="bg-white bg-opacity-85 absolute top-0 left-0 bottom-0 right-0  hidden  hide-on-play mobile:block"></span>
+        <button href="/"
+            class="cursor-pointer absolute top-1/2 hide-on-play  left-1/2 -translate-x-1/2 -translate-y-1/2 hidden mobile:flex mobile:flex-1 col-span-4 col-start-9 text-sm/[1em] max-w-[21rem] mobile:max-w-[17rem] text-yellow3  items-center mobile:justify-center gap-6 video-controller mx-auto">
+            <span class=" text-start flex-1">
+                СМОТРИТЕ <br> ВИДЕО О НАШЕМ ПРОИЗВОДСТВЕ
+            </span>
+        </button>
+    </div>
 </section>
 
-<!-- TODO ADD swiper-container -->
-<!-- <section class="section ">
-    <h2 class="heading2 max-w-[49.375rem] mb-[3.75rem] tablet:mb-10 mobile:mb-5 container">
+<section class="section container swiper-container news-section" id="newsBlock">
+    <h2 class="heading2 max-w-[49.375rem] mb-[3.75rem] tablet:mb-10 mobile:mb-5 ">
         Новости
     </h2>
+    <div class="swiper mb-6 tablet:mb-5 mobile:mb-4">
+        <div class="swiper-wrapper">
+            <a href="#" data-modal="fedbackModal" class="swiper-slide news-section__block-wrapper">
+                <article class="news-section__block">
+                    <h6 class="news-section__block__heading">Новость Новость</h6>
+                    <span class="news-section__block__img">
+                        <img src="img/main/video-back.webp" alt="">
+                    </span>
+                    <p class="news-section__block__description">Описание новости описание новости описание новости
+                        описание новости описание новости Описание новости описание новости описание новости
+                        описание новости описание новости</p>
+                </article>
+            </a>
+            <a href="#" data-modal="fedbackModal" class="swiper-slide news-section__block-wrapper">
+                <article class="news-section__block">
+                    <h6 class="news-section__block__heading">Новость Новость</h6>
+                    <span class="news-section__block__img">
+                        <img src="img/main/video-back.webp" alt="">
+                    </span>
+                    <p class="news-section__block__description">Описание новости описание новости описание новости
+                        описание новости описание новости Описание новости описание новости описание новости
+                        описание новости описание новости</p>
+                </article>
+            </a>
+            <a href="#" data-modal="fedbackModal" class="swiper-slide news-section__block-wrapper">
+                <article class="news-section__block">
+                    <h6 class="news-section__block__heading">Новость Новость</h6>
+                    <span class="news-section__block__img">
+                        <img src="img/main/video-back.webp" alt="">
+                    </span>
+                    <p class="news-section__block__description">Описание новости описание новости описание новости
+                        описание новости описание новости Описание новости описание новости описание новости
+                        описание новости описание новости</p>
+                </article>
+            </a>
+            <a href="#" data-modal="fedbackModal" class="swiper-slide news-section__block-wrapper">
+                <article class="news-section__block">
+                    <h6 class="news-section__block__heading">Новость Новость</h6>
+                    <span class="news-section__block__img">
+                        <img src="img/main/video-back.webp" alt="">
+                    </span>
+                    <p class="news-section__block__description">Описание новости описание новости описание новости
+                        описание новости описание новости Описание новости описание новости описание новости
+                        описание новости описание новости</p>
+                </article>
+            </a>
+        </div>
+    </div>
     <div class="container flex items-center">
         <div class="swiper-controls flex items-center gap-5 ml-auto">
             <button
@@ -296,7 +383,7 @@
                 class="btn btn-slider btn-slider-big btn-slider-grey next tablet:btn-slider-normal mobile:btn-slider-small" />
         </div>
     </div>
-</section> -->
+</section>
 
 
 <section class="section rounded-[1.25rem]  bg-grey3 pb-24 tablet:pb-14 container mobile:pb-10">
